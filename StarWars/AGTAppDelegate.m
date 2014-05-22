@@ -24,14 +24,25 @@
     [self configureAppearance];
     
     // crear un navigation para la navi de los personajes y su wiki
-    
-    AGTTableViewCharacters * tableController = [[AGTTableViewCharacters alloc]initWithModel:[[AGTCharacterTableModel alloc]init] withStyle:UITableViewStyleGrouped];
+    AGTCharacterTableModel *allCharacters = [[AGTCharacterTableModel alloc]init];
+    AGTTableViewCharacters * tableController = [[AGTTableViewCharacters alloc]initWithModel:allCharacters withStyle:UITableViewStyleGrouped];
 
     
-    UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:tableController];
-    
+    UINavigationController *nvMaestro = [[UINavigationController alloc]initWithRootViewController:tableController];
+    AGTCharacterViewController *detalle = [[AGTCharacterViewController alloc]initWithModel:[allCharacters rebelCharacterAtIndex:0]];
     // Lo mostramos en pantalla
-    self.window.rootViewController = nv;
+    UINavigationController *nvDetalle = [[UINavigationController alloc]initWithRootViewController:detalle];
+    
+    // creamos el splitview
+    UISplitViewController *split = [[UISplitViewController alloc]init];
+    
+    split.viewControllers = @[ nvMaestro,  nvDetalle];
+    
+    split.delegate = detalle;
+    tableController.delegate = detalle;
+    self.window.rootViewController = split;
+    
+    
     
     self.window.backgroundColor = [UIColor brownColor];
     [self.window makeKeyAndVisible];

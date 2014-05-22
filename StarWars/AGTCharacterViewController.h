@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AGTTableViewCharacters.h"
 #import "AGTCharacterModel.h"
 #import "CafPlayer.h"
 
-@interface AGTCharacterViewController : UIViewController
+@interface AGTCharacterViewController : UIViewController <UISplitViewControllerDelegate, AGTTableViewCharactersDelegate >
 
 @property (nonatomic, strong) AGTCharacterModel *model;
 @property (nonatomic, weak) IBOutlet UIImageView *photoView;

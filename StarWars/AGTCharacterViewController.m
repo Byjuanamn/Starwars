@@ -12,6 +12,16 @@
 
 @implementation AGTCharacterViewController
 
+#pragma mark - Splits
+-(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc{
+    
+}
+
+-(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem{
+    
+}
+
+#pragma mark - Vistas y metodos de clase
 -(id) initWithModel: (AGTCharacterModel *) aModel{
     
     if (self = [super initWithNibName:nil
@@ -59,7 +69,14 @@
     
 }
 
+#pragma mark - table personajes delegate
 
+-(void)characterTableViewController:(AGTTableViewCharacters *)vc didChangeCharacter:(AGTCharacterModel *)character{
+    
+    self.model = character;
+    self.photoView.image = self.model.photo;
+    
+}
 
 
 

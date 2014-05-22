@@ -12,10 +12,20 @@
 #define IMPERIAL_SECTION 1
 #define REBEL_SECTION 0
 
+@class AGTTableViewCharacters;
+
+@protocol AGTTableViewCharactersDelegate <NSObject>
+
+-(void)characterTableViewController:(AGTTableViewCharacters *)vc didChangeCharacter:(AGTCharacterModel*)character;
+
+@end
+
 
 @interface AGTTableViewCharacters : UITableViewController
 
-- (id) initWithModel: (AGTCharacterTableModel *)aModel withStyle:(UITableViewStyle) aStyle;
+@property (weak, nonatomic) id<AGTTableViewCharactersDelegate> delegate;
 @property (strong, nonatomic) AGTCharacterTableModel *personajes;
+
+- (id) initWithModel: (AGTCharacterTableModel *)aModel withStyle:(UITableViewStyle) aStyle;
 
 @end

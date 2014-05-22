@@ -105,9 +105,8 @@
         character = [self.personajes rebelCharacterAtIndex:indexPath.row];
     }
     
-    AGTWikiViewController *wikiController = [[AGTWikiViewController alloc]initWithModel:character];
-    
-    [self.navigationController pushViewController:wikiController animated:YES];
+    [self.delegate characterTableViewController:self
+                             didChangeCharacter:character];
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
