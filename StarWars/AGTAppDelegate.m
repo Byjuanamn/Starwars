@@ -11,6 +11,7 @@
 #import "AGTCharacterViewController.h"
 #import "AGTWikiViewController.h"
 #import "AGTTableViewCharacters.h"
+#import "AGTCharacterTableModel.h"
 
 @implementation AGTAppDelegate
 
@@ -24,8 +25,9 @@
     
     // crear un navigation para la navi de los personajes y su wiki
     
-    AGTTableViewCharacters * tableController = [[AGTTableViewCharacters alloc]initWithStyle:UITableViewStylePlain];
-    tableController.model = [self arrayOfModels];
+    AGTTableViewCharacters * tableController = [[AGTTableViewCharacters alloc]initWithModel:[[AGTCharacterTableModel alloc]init] withStyle:UITableViewStyleGrouped];
+
+    
     UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:tableController];
     
     // Lo mostramos en pantalla

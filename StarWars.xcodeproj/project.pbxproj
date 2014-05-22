@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DACB1F2192DE4CE00DF9973 /* AGTTableViewCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACB1F0192DE4CE00DF9973 /* AGTTableViewCharacters.m */; };
 		5DACB1F3192DE4CE00DF9973 /* AGTTableViewCharacters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DACB1F1192DE4CE00DF9973 /* AGTTableViewCharacters.xib */; };
+		5DD18B75192E404E00E90597 /* AGTCharacterTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD18B74192E404E00E90597 /* AGTCharacterTableModel.m */; };
 		ED1033B61759F3A100439C70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B51759F3A100439C70 /* UIKit.framework */; };
 		ED1033B81759F3A100439C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B71759F3A100439C70 /* Foundation.framework */; };
 		ED1033BA1759F3A100439C70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B91759F3A100439C70 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 		5DACB1EF192DE4CE00DF9973 /* AGTTableViewCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTTableViewCharacters.h; sourceTree = "<group>"; };
 		5DACB1F0192DE4CE00DF9973 /* AGTTableViewCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTTableViewCharacters.m; sourceTree = "<group>"; };
 		5DACB1F1192DE4CE00DF9973 /* AGTTableViewCharacters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTTableViewCharacters.xib; sourceTree = "<group>"; };
+		5DD18B73192E404E00E90597 /* AGTCharacterTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCharacterTableModel.h; sourceTree = "<group>"; };
+		5DD18B74192E404E00E90597 /* AGTCharacterTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCharacterTableModel.m; sourceTree = "<group>"; };
 		ED1033B21759F3A100439C70 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1033B51759F3A100439C70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED1033B71759F3A100439C70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +170,8 @@
 			children = (
 				ED1033D21759FF4900439C70 /* AGTCharacterModel.h */,
 				ED1033D31759FF4900439C70 /* AGTCharacterModel.m */,
+				5DD18B73192E404E00E90597 /* AGTCharacterTableModel.h */,
+				5DD18B74192E404E00E90597 /* AGTCharacterTableModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				5DACB1F2192DE4CE00DF9973 /* AGTTableViewCharacters.m in Sources */,
 				ED1033D41759FF4900439C70 /* AGTCharacterModel.m in Sources */,
 				ED1033D9175A066800439C70 /* AGTCharacterViewController.m in Sources */,
+				5DD18B75192E404E00E90597 /* AGTCharacterTableModel.m in Sources */,
 				ED1033FF175A131D00439C70 /* CafPlayer.m in Sources */,
 				ED103406175A3DB300439C70 /* AGTWikiViewController.m in Sources */,
 			);
