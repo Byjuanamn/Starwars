@@ -10,6 +10,7 @@
 #import "AGTCharacterModel.h"
 #import "AGTCharacterViewController.h"
 #import "AGTWikiViewController.h"
+#import "AGTTableViewCharacters.h"
 
 @implementation AGTAppDelegate
 
@@ -21,15 +22,14 @@
     // Configuramos el aspecto
     [self configureAppearance];
     
+    // crear un navigation para la navi de los personajes y su wiki
     
-    
-    
-    // Creamos el combinador
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
-    tabVC.viewControllers = [self arrayOfControllers];
+    AGTTableViewCharacters * tableController = [[AGTTableViewCharacters alloc]initWithStyle:UITableViewStylePlain];
+    tableController.model = [self arrayOfModels];
+    UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:tableController];
     
     // Lo mostramos en pantalla
-    self.window.rootViewController = tabVC;
+    self.window.rootViewController = nv;
     
     self.window.backgroundColor = [UIColor brownColor];
     [self.window makeKeyAndVisible];

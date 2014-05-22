@@ -8,7 +8,11 @@
 
 #import "AGTCharacterModel.h"
 
+
+
 @implementation AGTCharacterModel
+
+@synthesize firstName = _firstName;
 
 -(id) initWithFirstName: (NSString *) aFirstName
                lastName: (NSString *) aLastName

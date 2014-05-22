@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DACB1F2192DE4CE00DF9973 /* AGTTableViewCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACB1F0192DE4CE00DF9973 /* AGTTableViewCharacters.m */; };
+		5DACB1F3192DE4CE00DF9973 /* AGTTableViewCharacters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DACB1F1192DE4CE00DF9973 /* AGTTableViewCharacters.xib */; };
 		ED1033B61759F3A100439C70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B51759F3A100439C70 /* UIKit.framework */; };
 		ED1033B81759F3A100439C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B71759F3A100439C70 /* Foundation.framework */; };
 		ED1033BA1759F3A100439C70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1033B91759F3A100439C70 /* CoreGraphics.framework */; };
@@ -42,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DACB1EF192DE4CE00DF9973 /* AGTTableViewCharacters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTTableViewCharacters.h; sourceTree = "<group>"; };
+		5DACB1F0192DE4CE00DF9973 /* AGTTableViewCharacters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTTableViewCharacters.m; sourceTree = "<group>"; };
+		5DACB1F1192DE4CE00DF9973 /* AGTTableViewCharacters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTTableViewCharacters.xib; sourceTree = "<group>"; };
 		ED1033B21759F3A100439C70 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1033B51759F3A100439C70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED1033B71759F3A100439C70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,6 +180,9 @@
 				ED103403175A3DB300439C70 /* AGTWikiViewController.h */,
 				ED103404175A3DB300439C70 /* AGTWikiViewController.m */,
 				ED103405175A3DB300439C70 /* AGTWikiViewController.xib */,
+				5DACB1EF192DE4CE00DF9973 /* AGTTableViewCharacters.h */,
+				5DACB1F0192DE4CE00DF9973 /* AGTTableViewCharacters.m */,
+				5DACB1F1192DE4CE00DF9973 /* AGTTableViewCharacters.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 				ED1033C81759F3A100439C70 /* Default.png in Resources */,
 				ED1033CA1759F3A100439C70 /* Default@2x.png in Resources */,
 				ED1033CC1759F3A100439C70 /* Default-568h@2x.png in Resources */,
+				5DACB1F3192DE4CE00DF9973 /* AGTTableViewCharacters.xib in Resources */,
 				ED1033DA175A066800439C70 /* AGTCharacterViewController.xib in Resources */,
 				ED1033E3175A119600439C70 /* c3po.caf in Resources */,
 				ED1033E4175A119600439C70 /* chewbacca.caf in Resources */,
@@ -295,6 +304,7 @@
 			files = (
 				ED1033C21759F3A100439C70 /* main.m in Sources */,
 				ED1033C61759F3A100439C70 /* AGTAppDelegate.m in Sources */,
+				5DACB1F2192DE4CE00DF9973 /* AGTTableViewCharacters.m in Sources */,
 				ED1033D41759FF4900439C70 /* AGTCharacterModel.m in Sources */,
 				ED1033D9175A066800439C70 /* AGTCharacterViewController.m in Sources */,
 				ED1033FF175A131D00439C70 /* CafPlayer.m in Sources */,
@@ -415,6 +425,7 @@
 				ED1033D11759F3A100439C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
